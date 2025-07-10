@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشغل الموسيقى الخيالي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <h1>مشغل الموسيقى الخيالي</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" data-section="home">الرئيسية</a></li>
+                    <li><a href="#artists" data-section="artists">الفنانين</a></li>
+                    <li><a href="#most-played" data-section="most-played">الأكثر تشغيلاً</a></li>
+                    <li><a href="#latest" data-section="latest">الأحدث</a></li>
+                    <li><a href="#upload" data-section="upload">رفع ملف</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <h2>اكتشف عالم الموسيقى الخيالي</h2>
+                    <p>استمع إلى أجمل الأغاني مع مشغل موسيقى متطور وتصميم خيالي</p>
+                </div>
+                
+                <!-- Featured Playlists -->
+                <div class="featured-playlists">
+                    <h3>قوائم التشغيل المميزة</h3>
+                    <div class="playlists-grid">
+                        <div class="playlist-card">
+                            <div class="playlist-cover">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>الأغاني المفضلة</h4>
+                            <p>مجموعة من أجمل الأغاني</p>
+                        </div>
+                        <div class="playlist-card">
+                            <div class="playlist-cover">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h4>الأكثر شعبية</h4>
+                            <p>الأغاني الأكثر استماعاً</p>
+                        </div>
+                        <div class="playlist-card">
+                            <div class="playlist-cover">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>أغاني رومانسية</h4>
+                            <p>للحظات الرومانسية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artists Section -->
+        <section id="artists" class="section">
+            <div class="container">
+                <h2>الفنانين</h2>
+                <div class="artists-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-artist="all">جميع الفنانين</button>
+                        <button class="tab-btn" data-artist="fairuz">فيروز</button>
+                        <button class="tab-btn" data-artist="umm-kulthum">أم كلثوم</button>
+                        <button class="tab-btn" data-artist="mohammed-abdel-wahab">محمد عبد الوهاب</button>
+                        <button class="tab-btn" data-artist="add-artist">+ إضافة فنان</button>
+                    </div>
+                    
+                    <div class="artist-content" id="artist-all">
+                        <div class="artists-grid">
+                            <div class="artist-card" data-artist="fairuz">
+                                <div class="artist-image">
+                                    <i class="fas fa-user-music"></i>
+                                </div>
+                                <h4>فيروز</h4>
+                                <p>أيقونة الموسيقى العربية</p>
+                                <div class="artist-stats">
+                                    <span><i class="fas fa-music"></i> 45 أغنية</span>
+                                    <span><i class="fas fa-play"></i> 1.2M تشغيل</span>
+                                </div>
+                            </div>
+                            
+                            <div class="artist-card" data-artist="umm-kulthum">
+                                <div class="artist-image">
+                                    <i class="fas fa-user-music"></i>
+                                </div>
+                                <h4>أم كلثوم</h4>
+                                <p>كوكب الشرق</p>
+                                <div class="artist-stats">
+                                    <span><i class="fas fa-music"></i> 62 أغنية</span>
+                                    <span><i class="fas fa-play"></i> 2.1M تشغيل</span>
+                                </div>
+                            </div>
+                            
+                            <div class="artist-card" data-artist="mohammed-abdel-wahab">
+                                <div class="artist-image">
+                                    <i class="fas fa-user-music"></i>
+                                </div>
+                                <h4>محمد عبد الوهاب</h4>
+                                <p>موسيقار الأجيال</p>
+                                <div class="artist-stats">
+                                    <span><i class="fas fa-music"></i> 38 أغنية</span>
+                                    <span><i class="fas fa-play"></i> 950K تشغيل</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Most Played Section -->
+        <section id="most-played" class="section">
+            <div class="container">
+                <h2>الأكثر تشغيلاً</h2>
+                <div class="songs-list">
+                    <!-- Songs will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Section -->
+        <section id="latest" class="section">
+            <div class="container">
+                <h2>الأحدث</h2>
+                <div class="songs-list">
+                    <!-- Songs will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section id="upload" class="section">
+            <div class="container">
+                <h2>رفع مقطع صوتي</h2>
+                <div class="upload-area">
+                    <div class="upload-box" id="uploadBox">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>اسحب الملف هنا أو انقر للاختيار</h3>
+                        <p>يدعم ملفات MP3, WAV, M4A</p>
+                        <input type="file" id="audioFileInput" accept="audio/*" multiple hidden>
+                    </div>
+                    
+                    <div class="upload-form" id="uploadForm" style="display: none;">
+                        <h3>معلومات الأغنية</h3>
+                        <form id="songInfoForm">
+                            <div class="form-group">
+                                <label for="songTitle">اسم الأغنية</label>
+                                <input type="text" id="songTitle" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="artistName">اسم الفنان</label>
+                                <input type="text" id="artistName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="albumName">اسم الألبوم</label>
+                                <input type="text" id="albumName">
+                            </div>
+                            <button type="submit">إضافة إلى المكتبة</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="uploaded-files" id="uploadedFiles">
+                    <h3>الملفات المرفوعة</h3>
+                    <div class="files-list"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="player-container">
+            <div class="player-controls">
+                <button class="control-btn" id="prevBtn">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="control-btn main-control" id="playPauseBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="control-btn" id="nextBtn">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+            </div>
+            
+            <div class="player-info">
+                <div class="song-info">
+                    <h4 id="currentSongTitle">اختر أغنية للتشغيل</h4>
+                    <p id="currentArtist">فنان</p>
+                </div>
+                <div class="progress-container">
+                    <span id="currentTime">0:00</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="progress"></div>
+                        <div class="progress-handle" id="progressHandle"></div>
+                    </div>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+            
+            <div class="player-options">
+                <button class="option-btn" id="shuffleBtn">
+                    <i class="fas fa-random"></i>
+                </button>
+                <button class="option-btn" id="repeatBtn">
+                    <i class="fas fa-redo"></i>
+                </button>
+                <button class="option-btn" id="volumeBtn">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <div class="volume-slider">
+                    <input type="range" id="volumeSlider" min="0" max="100" value="50">
+                </div>
+                <button class="option-btn" id="playlistBtn">
+                    <i class="fas fa-list"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Playlist Panel -->
+        <div class="playlist-panel" id="playlistPanel">
+            <div class="playlist-header">
+                <h3>قائمة التشغيل</h3>
+                <button id="closePlaylistBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="playlist-content">
+                <div class="playlist-songs" id="playlistSongs">
+                    <!-- Playlist songs will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audioPlayer" preload="metadata"></audio>
+
+    <!-- Add Artist Modal -->
+    <div class="modal" id="addArtistModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>إضافة فنان جديد</h3>
+                <button class="close-modal" id="closeArtistModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="addArtistForm">
+                <div class="form-group">
+                    <label for="newArtistName">اسم الفنان</label>
+                    <input type="text" id="newArtistName" required>
+                </div>
+                <div class="form-group">
+                    <label for="artistBio">نبذة عن الفنان</label>
+                    <textarea id="artistBio" rows="3"></textarea>
+                </div>
+                <button type="submit">إضافة الفنان</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
